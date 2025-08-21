@@ -1,0 +1,186 @@
+---
+import { 
+  Code, 
+  Database, 
+  Server, 
+  Blocks, 
+  Cloud, 
+  Settings,
+  Terminal,
+  Globe
+} from 'lucide-astro';
+import data from '../../../data.json';
+---
+
+<section id="skills" class="section-padding bg-white dark:bg-primary-900">
+  <div class="container-width">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold heading-underline">Technical Skills</h2>
+      <p class="text-xl text-primary-600 dark:text-primary-300 max-w-3xl mx-auto leading-relaxed">
+        A comprehensive toolkit built over years of experience in full-stack development, blockchain technology, and system architecture.
+      </p>
+    </div>
+    
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Programming Languages -->
+      <div class="card neon-border p-6 space-y-4 hover:shadow-lg transition-shadow duration-300 bg-white/90 dark:bg-primary-800/80">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="p-2 bg-accent-100 dark:bg-accent-900 rounded-lg">
+            <Code class="w-6 h-6 text-accent-600 dark:text-accent-400" />
+          </div>
+          <h3 class="font-semibold text-lg text-primary-900 dark:text-white">Languages</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.programming_languages.map((t, i) => (
+            <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'}`}>{t}</span>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Frameworks & Libraries -->
+      <div class="card p-6 space-y-4 hover:shadow-lg transition-shadow duration-300">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="p-2 bg-accent-100 dark:bg-accent-900 rounded-lg">
+            <Globe class="w-6 h-6 text-accent-600 dark:text-accent-400" />
+          </div>
+          <h3 class="font-semibold text-lg text-primary-900 dark:text-white">Frameworks & Libraries</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.frameworks.map((t, i) => (
+            <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'}`}>{t}</span>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Blockchain -->
+      <div class="card p-6 space-y-4 hover:shadow-lg transition-shadow duration-300">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="p-2 bg-accent-100 dark:bg-accent-900 rounded-lg">
+            <Blocks class="w-6 h-6 text-accent-600 dark:text-accent-400" />
+          </div>
+          <h3 class="font-semibold text-lg text-primary-900 dark:text-white">
+            Blockchain <span class="belt belt-white ml-2">White Belt</span>
+          </h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.blockchain.map((t, i) => (
+            <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'}`}>{t}</span>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Databases -->
+      <div class="card p-6 space-y-4 hover:shadow-lg transition-shadow duration-300">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="p-2 bg-accent-100 dark:bg-accent-900 rounded-lg">
+            <Database class="w-6 h-6 text-accent-600 dark:text-accent-400" />
+          </div>
+          <h3 class="font-semibold text-lg text-primary-900 dark:text-white">Databases</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.databases.map((t, i) => (
+            <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'}`}>{t}</span>
+          ))}
+        </div>
+      </div>
+      
+      <!-- DevOps & Cloud -->
+      <div class="card p-6 space-y-4 hover:shadow-lg transition-shadow duration-300">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="p-2 bg-accent-100 dark:bg-accent-900 rounded-lg">
+            <Cloud class="w-6 h-6 text-accent-600 dark:text-accent-400" />
+          </div>
+          <h3 class="font-semibold text-lg text-primary-900 dark:text-white">DevOps & Cloud</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.devops_cloud.map((t, i) => (
+            <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'}`}>{t}</span>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Tools & Technologies -->
+      <div class="card p-6 space-y-4 hover:shadow-lg transition-shadow duration-300">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="p-2 bg-accent-100 dark:bg-accent-900 rounded-lg">
+            <Settings class="w-6 h-6 text-accent-600 dark:text-accent-400" />
+          </div>
+          <h3 class="font-semibold text-lg text-primary-900 dark:text-white">Tools</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.tools.map((t, i) => (
+            <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'}`}>{t}</span>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Backend  -->
+      <div class="card p-6 space-y-4 hover:shadow-lg transition-shadow duration-300">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="p-2 bg-accent-100 dark:bg-accent-900 rounded-lg">
+            <Server class="w-6 h-6 text-accent-600 dark:text-accent-400" />
+          </div>
+          <h3 class="font-semibold text-lg text-primary-900 dark:text-white">Backend</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.backend.map((t, i) => (
+            <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'}`}>{t}</span>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Practices / Methodologies -->
+      <div class="card p-6 space-y-4 hover:shadow-lg transition-shadow duration-300">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="p-2 bg-accent-100 dark:bg-accent-900 rounded-lg">
+            <Terminal class="w-6 h-6 text-accent-600 dark:text-accent-400" />
+          </div>
+          <h3 class="font-semibold text-lg text-primary-900 dark:text-white">Practices</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.practices.map((t, i) => (
+            <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'}`}>{t}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+    
+    <!-- Additional Skills from Resume -->
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="card p-6">
+        <h3 class="font-semibold text-lg mb-4">Core Technical Stack (from Resume)</h3>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.technical.map((tech) => (
+            <span class="inline-flex items-center px-2.5 py-1 bg-brand-100 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 text-xs font-medium rounded-full border border-brand-200 dark:border-brand-700">
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-semibold text-lg mb-4">Soft Skills</h3>
+        <div class="flex flex-wrap gap-2">
+          {data.skills.soft_skills.map((soft) => (
+            <span class="inline-flex items-center px-2.5 py-1 bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 text-xs font-medium rounded-full border border-accent-200 dark:border-accent-700">
+              {soft}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .skill-item {
+    @apply text-primary-700 dark:text-primary-300 text-sm;
+    @apply flex items-center space-x-2 py-1;
+  }
+  
+  .skill-item::before {
+    content: '•';
+    @apply text-accent-600 dark:text-accent-400 font-bold;
+  }
+</style>

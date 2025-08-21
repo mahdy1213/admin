@@ -1,0 +1,129 @@
+---
+import '../styles/global.css';
+import data from '../../data.json';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  type?: string;
+}
+
+const {
+  title,
+  description = data.summary,
+  image = "/og-image.svg",
+  type = "website"
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL(image, Astro.url);
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={socialImageURL} />
+    <meta property="og:site_name" content={`${data.name} - Developer Portfolio`} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={socialImageURL} />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" is:inline>
+      {JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: data.name,
+        jobTitle: 'Developer & CTO',
+        description: data.summary,
+        email: data.email,
+        address: data.location,
+        url: '',
+        sameAs: [
+          'https://github.com/omid3699',
+          'https://linkedin.com/in/omidazadi'
+        ],
+        knowsAbout: [
+          'Python',
+          'Go',
+          'Blockchain Development',
+          'Smart Contracts',
+          'Django',
+        ]
+      })}
+    </script>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Theme detection script -->
+    <script is:inline>
+      // Prevent flash of unstyled content
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+        return 'light';
+      })();
+      
+      if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+      window.__theme = theme;
+    </script>
+  </head>
+  
+  <body class="antialiased">
+    <a href="#main" class="skip-to-content">Skip to content</a>
+    <slot />
+    
+    <!-- Dark mode toggle script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        if (themeToggle) {
+          themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+              html.classList.remove('dark');
+              localStorage.setItem('theme', 'light');
+            } else {
+              html.classList.add('dark');
+              localStorage.setItem('theme', 'dark');
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

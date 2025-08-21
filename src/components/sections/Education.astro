@@ -1,0 +1,61 @@
+---
+import { GraduationCap, BookOpen, BadgeCheck } from 'lucide-astro';
+import data from '../../../data.json';
+---
+
+<section id="education" class="section-padding bg-white dark:bg-primary-900 section-surface kyokushin-watermark">
+  <div class="container-width">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Education</h2>
+      <p class="text-xl text-primary-600 dark:text-primary-300 max-w-3xl mx-auto leading-relaxed">
+        Formal schooling and self-driven learning that shaped my engineering mindset and leadership style.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Formal Education -->
+      <div class="card neon-border p-6 lg:col-span-2">
+        <h3 class="text-xl font-semibold flex items-center gap-2 mb-4">
+          <GraduationCap class="w-6 h-6 text-brand-600 dark:text-brand-400" /> Formal Education
+        </h3>
+        <div class="space-y-4">
+          {data.education.map((ed) => (
+            <div class="border-l-4 border-brand-300 dark:border-brand-700 pl-4">
+              <p class="text-lg font-medium">{ed.institution}</p>
+              <p class="text-primary-600 dark:text-primary-300">{ed.degree} — {ed.location}</p>
+              <p class="text-sm text-primary-500 dark:text-primary-400">{ed.year}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Additional Education -->
+      <div class="card neon-border p-6">
+        <h3 class="text-xl font-semibold flex items-center gap-2 mb-4">
+          <BookOpen class="w-6 h-6 text-brand-600 dark:text-brand-400" /> Self-Learning
+        </h3>
+        <p class="text-primary-700 dark:text-primary-300">{data.additional_education}</p>
+      </div>
+    </div>
+
+    <!-- Volunteer Experience -->
+    <div class="mt-12">
+      <h3 class="text-2xl font-semibold flex items-center gap-2 mb-6">
+        <BadgeCheck class="w-6 h-6 text-brand-600 dark:text-brand-400" /> Volunteer Experience
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {data.volunteer_experience.map((v) => (
+          <div class="card p-6">
+            <p class="text-lg font-medium">{v.organization}</p>
+            <p class="text-primary-600 dark:text-primary-300">{v.role}{v.location ? ` — ${v.location}` : ''}</p>
+            {v.responsibilities?.length && (
+              <ul class="mt-3 list-disc list-inside space-y-1 text-primary-700 dark:text-primary-300">
+                {v.responsibilities.map((r) => <li>{r}</li>)}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

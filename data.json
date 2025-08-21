@@ -1,0 +1,222 @@
+{
+    "name": "managerX",
+    "location": "unknown",
+    "email": "managerX0513@gmail.com",
+    "phone": "managerX0513@gmail.com",
+    "profile_image": "./profile.png",
+    "resume_url": "https://biaupload.com/do.php?filename=org-390e41f7d2b91.pdf",
+    "summary": "How are you? I am a dark web developer specializing in network security, Python, Java, JavaScript, Kotlin, HTML, CSS, AI, Kali Linux. Over the years, I have learned and chosen the hard way for those young people who are unfortunately doing things that are not right for them. I provide a good environment for everyone.",
+    "experience": [{
+            "title": "PhD in Software Development and IT Security, MSc in Social Engineering",
+            "company": "..........",
+            "location": null,
+            "start_date": "2024-08",
+            "end_date": "Present",
+            "achievements": [
+                "Led technical strategy and development of Afghanistan's largest job platform, increasing daily active users by 300% and reaching over 50,000+ monthly users within the first year.",
+                "Built scalable web architecture using Django, PostgreSQL, Docker, and Nginx, capable of handling over 10,000 concurrent sessions with <300ms average response time.",
+                "Integrated multilingual support (Dari, Pashto, English) and secure authentication (JWT, email/phone), reducing failed login attempts by 45% and improving user accessibility across 34 provinces.",
+                "Managed a cross-functional team of 8+ developers (backend, frontend, mobile), improving sprint velocity by 60% through structured Agile workflows and weekly stand-ups.",
+                "Championed performance, security, and UX improvements, resulting in a 40% decrease in bounce rate and a 98% uptime SLA over 12 months.",
+                "Instituted robust CI/CD pipelines using GitHub Actions and Docker Compose, reducing deployment time from 2 hours to under 10 minutes, and enabling weekly production releases without downtime."
+            ]
+        },
+        {
+            "title": "Full Stack Web Developer",
+            "company": "Freelance & Personal Projects",
+            "location": null,
+            "start_date": "2023-09",
+            "end_date": "Present",
+            "achievements": [
+                "Architected and deployed over 10 full-featured web applications leveraging Django, Golang (Gin/Echo), HTMX, and TailwindCSS to deliver real-time interactivity and responsive user experiences.",
+                "Designed and launched an ebook downloading and sharing platform for university students with Django, attracting 1,000+ active users and facilitating over 10,000 downloads in the first academic year.",
+                "Engineered and maintained multiple Telegram bots with asynchronous task execution, database integration (SQLite/PostgreSQL), and modular architecture—reducing maintenance overhead by 40% while enhancing scalability.",
+                "Enhanced platform performance and reliability, achieving <200ms average response times and 99.9% uptime through backend optimization and advanced caching mechanisms.",
+                "Refactored and modernized legacy web systems by decoupling front-end and back-end layers, implementing RESTful APIs, and significantly improving modularity and maintainability across diverse client projects.",
+                "Integrated robust authentication and authorization workflows utilizing OAuth2 and JWT, strengthening data security and enabling seamless user account management across multiple deployed web applications."
+            ]
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Fiber Programming Academy",
+            "location": "Ghazni",
+            "start_date": "2024-11",
+            "end_date": "2025-06",
+            "achievements": [
+                "Designed and developed a Django-based Course Management System to manage physical course schedules, student enrollments, and tuition payments, supporting over 150+ active students.",
+                "Built a modular backend using Django's class-based views and forms, reducing code redundancy by 40% and accelerating feature expansion.",
+                "Integrated HTMX-driven partial page rendering, decreasing average admin task completion time by 30%.",
+                "Implemented role-based access control for administrators and staff, strengthening system security and reducing unauthorized access incidents to zero.",
+                "Deployed a responsive UI using AdminLTE, increasing accessibility across devices and improving staff satisfaction score by 25% (based on internal feedback).",
+                "Configured automated testing pipelines with Pytest and GitHub Actions, achieving 95% test coverage and enabling consistent CI across development cycles."
+            ]
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Ghazni University",
+            "location": "Ghazni",
+            "start_date": "2024-01",
+            "end_date": "2024-09",
+            "achievements": [
+                "Developed a custom Django-based e-library platform to provide digital access to academic books and resources for students and faculty.",
+                "Implemented secure upload, categorization, and download functionality for PDF materials, resulting in 5,000+ downloads in the first semester.",
+                "Designed a user-friendly interface with advanced search and filtering, improving resource discovery efficiency by 40%.",
+                "Integrated an admin dashboard for librarians to manage content, authors, and categories, streamlining content curation and reducing manual workload.",
+                "Deployed the platform to a production VPS using Gunicorn and Nginx, maintaining 99.9% uptime during peak academic usage.",
+                "Constructed RESTful APIs to support future integration with academic and library management systems, enhancing long-term interoperability."
+            ]
+        },
+        {
+            "title": "Software Developer",
+            "company": "Nikpa Travel Agency",
+            "location": "Ghazni",
+            "start_date": "2023-02",
+            "end_date": "2023-07",
+            "achievements": [
+                "Developed a comprehensive business management system for Nikpa Travel using Django and PostgreSQL, supporting 3,000+ customer profiles and increasing lead conversion rates by 35% through automated CRM workflows.",
+                "Built automated workflows for booking confirmations, visa follow-ups, and document reminders, reducing manual communication tasks by 60% and cutting response times from 24 hours to under 2 hours.",
+                "Integrated end-to-end financial tools including payment tracking, automated invoice generation, and real-time reporting, improving billing accuracy by 95% and reducing reconciliation time by 50%.",
+                "Implemented role-based access control (RBAC) and secure authentication for 50+ staff members, reducing unauthorized access incidents to zero over 12 months and enhancing audit compliance.",
+                "Delivered a responsive web interface using TailwindCSS and HTMX, boosting desk agent productivity by 40%, and streamlined deployment via CI/CD pipelines with unit testing, achieving 99.8% system uptime and enabling weekly release cycles."
+            ]
+        }
+    ],
+    "education": [{
+        "institution": "School",
+        "location": "unknown",
+        "degree": "School",
+        "year": "0000"
+    }],
+    "additional_education": "Advanced knowledge in the field of security and network software, websites, artificial intelligence, and Android applications based on personal development and new global creativity.",
+    "volunteer_experience": [{
+            "organization": "Education",
+            "location": "unknown",
+            "role": "Volunteer",
+            "responsibilities": [
+                "Dark engineering team, interference in internal and external websites, collecting information from data managers and databases, collecting all website information."
+            ]
+        },
+        {
+            "organization": "Education",
+            "location": null,
+            "role": "Active Volunteer",
+            "responsibilities": [
+                "Domestic and foreign companies in the fields of website security, application security and artificial intelligence, penetration testing, intrusion detection, and blocking intrusion paths."
+            ]
+        }
+    ],
+    "skills": {
+        "programming_languages": [
+            "Python",
+            "Java",
+            "Javascript",
+            "Kathleen",
+            "Perl",
+            "SQL",
+            "LISP",
+            "PHP"
+        ],
+        "frameworks": [
+            "Django",
+            "Flask",
+            "FastAPI",
+            "Scrapy",
+            "Selenium",
+            "Spring Boot",
+            "Playwright",
+            "React",
+            "Angular",
+            "Hunchentoot",
+            "Laravel",
+            "Express",
+            "Vue.js",
+            "Node.js"
+        ],
+        "devops_cloud": [
+            "Docker",
+            "Podman",
+            "AWS",
+            "GitHub Actions",
+            "Nginx",
+            "CI/CD",
+            "Kubernetes",
+            "Terraform",
+            "Jenkins"
+        ],
+        "blockchain": [
+            "Ethereum",
+            "Smart Contracts",
+            "IPFS",
+            "Foundry",
+            "Hardhat",
+            "Truffle",
+            "Remix",
+            "Web3.js",
+            "Web3.py",
+            "Solidity"
+        ],
+        "databases": [
+            "PostgreSQL",
+            "MariaDB",
+            "Redis",
+            "MongoDB",
+            "MySQL",
+            "SQLite"
+        ],
+        "tools": [
+            "Git",
+            "Linux",
+            "Celery",
+            "Postman",
+            "RabbitMQ",
+            "Swagger",
+            "VSCode",
+            "PyCharm",
+            "IntelliJ IDEA"
+        ],
+        "backend": [
+            "REST APIs",
+            "GraphQL",
+            "gRPC",
+            "Microservices",
+            "WebSockets",
+            "API Gateway",
+            "JWT",
+            "OAuth2",
+            "MVC Architecture",
+            "ORM Frameworks"
+        ],
+        "practices": [
+            "TDD",
+            "BDD",
+            "Design Patterns",
+            "Code Review",
+            "Performance Optimization",
+            "Security Best Practices",
+            "Agile Methodologies",
+            "Scrum",
+            "Kanban",
+            "Continuous Integration/Deployment"
+        ],
+        "technical": [
+            "Automation & Workflow Integration",
+            "System Design for Business Operations",
+            "Role-Based Access Control (RBAC)",
+            "Linux Server Management/AdminStrations",
+            "Cloud Architecture Design",
+            "API Security",
+            "Scalable Application Development"
+        ],
+        "soft_skills": [
+            "Professional English (Reading, Writing, Speaking)",
+            "Cross-Cultural Communication",
+            "Team Coordination & Remote Collaboration",
+            "Community Outreach & Event Coordination",
+            "Mentorship & Emotional Support",
+            "Problem-Solving & Critical Thinking",
+            "Self-Motivated Learner",
+            "Adaptability in High-Pressure Environments",
+            "Effective Time Management"
+        ]
+    }
+}

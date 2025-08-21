@@ -1,0 +1,146 @@
+---
+import { getCollection } from 'astro:content';
+import { Github, ExternalLink, Play } from 'lucide-astro';
+
+const projects = await getCollection('projects');
+const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
+const allTechs = Array.from(new Set(sortedProjects.flatMap((p) => p.data.technologies))).slice(0, 12);
+---
+
+<section id="projects" class="section-padding bg-gradient-to-br from-brand-50/50 via-white to-accent-50/50 dark:from-primary-800 dark:via-primary-800 dark:to-primary-900 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 bg-pattern-grid opacity-20"></div>
+  <div class="container-width relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-10">
+      <h2 class="text-4xl md:text-5xl font-bold gradient-text heading-underline mb-6">Featured Projects <span class="belt belt-green ml-2">Green Belt</span></h2>
+      <p class="text-xl text-primary-600 dark:text-primary-300 max-w-3xl mx-auto leading-relaxed">
+        A showcase of technical challenges solved, projects built, and impact created through innovative software development.
+      </p>
+    </div>
+
+    <!-- Tech Legend -->
+    {allTechs.length > 0 && (
+      <div class="card p-4 mb-10 flex flex-wrap gap-2 justify-center">
+        {allTechs.map((t, i) => (
+          <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'} mono`}>{t}</span>
+        ))}
+      </div>
+    )}
+    
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      {sortedProjects.map((project) => (
+        <article class="card neon-border tilt-hover group hover:scale-[1.02] hover-glow transition-all duration-500 overflow-hidden relative border border-primary-200 dark:border-primary-700/60">
+          <!-- Project Image/Visual -->
+          <div class="h-48 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-500 bg-[radial-gradient(circle_at_20%_20%,rgba(0,229,255,0.15),transparent_25%),radial-gradient(circle_at_80%_30%,rgba(158,0,255,0.12),transparent_35%),radial-gradient(circle_at_40%_80%,rgba(255,0,229,0.10),transparent_30%)] animate-gridMove">
+            <div class="text-center p-6 relative z-10">
+              <h3 class="font-bold text-lg gradient-text mb-2 mono">
+                {project.data.title}
+              </h3>
+              <div class="inline-flex px-3 py-1 bg-white/80 dark:bg-white/10 backdrop-blur-sm text-primary-800 dark:text-white text-sm font-medium rounded-full border border-primary-200 dark:border-white/20 shadow-neon-cyan">
+                {project.data.category.toUpperCase()}
+              </div>
+            </div>
+            <!-- Shimmer effect -->
+            <div class="absolute inset-0 shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <!-- Category Badge -->
+            {project.data.featured && (
+              <div class="absolute top-4 right-4 bg-primary-100 dark:bg-white/10 backdrop-blur-sm text-primary-800 dark:text-white text-xs font-bold px-2 py-1 rounded border border-primary-200 dark:border-white/20 shadow-neon-purple animate-pulse">
+                FEATURED
+              </div>
+            )}
+          </div>
+          
+          <!-- Project Content -->
+          <div class="p-6 space-y-4">
+            <!-- Description -->
+            <p class="text-primary-700 dark:text-primary-300 leading-relaxed line-clamp-3">
+              {project.data.longDescription}
+            </p>
+            
+            <!-- Technologies -->
+            <div class="flex flex-wrap gap-2">
+              {project.data.technologies.slice(0, 6).map((tech, i) => (
+                <span class={`chip ${i % 2 === 0 ? 'chip-cyan' : 'chip-purple'}`}>
+                  {tech}
+                </span>
+              ))}
+              {project.data.technologies.length > 6 && (
+                <span class="chip chip-cyan">
+                  +{project.data.technologies.length - 6} more
+                </span>
+              )}
+            </div>
+            
+           
+            <!-- Links -->
+            <div class="flex items-center justify-between pt-4 border-t border-primary-100 dark:border-primary-700">
+              <div class="flex space-x-3">
+                {project.data.links?.github && project.data.links.github.startsWith('http') && (
+                  <a
+                    href={project.data.links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-1 text-primary-600 hover:text-brand-600 dark:text-primary-400 dark:hover:text-brand-400 transition-all duration-300 focus-ring rounded px-2 py-1 hover:scale-105"
+                    aria-label={`View ${project.data.title} source code on GitHub`}
+                  >
+                    <Github class="w-4 h-4" />
+                    <span class="text-sm font-medium">Code</span>
+                  </a>
+                )}
+                
+                {project.data.links?.live && project.data.links.live.startsWith('http') && (
+                  <a
+                    href={project.data.links.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-1 text-primary-600 hover:text-brand-600 dark:text-primary-400 dark:hover:text-brand-400 transition-all duration-300 focus-ring rounded px-2 py-1 hover:scale-105"
+                    aria-label={`Visit ${project.data.title} live site`}
+                  >
+                    <ExternalLink class="w-4 h-4" />
+                    <span class="text-sm font-medium">Live</span>
+                  </a>
+                )}
+                
+                {project.data.links?.demo && project.data.links.demo.startsWith('http') && (
+                  <a
+                    href={project.data.links.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-1 text-primary-600 hover:text-brand-600 dark:text-primary-400 dark:hover:text-brand-400 transition-all duration-300 focus-ring rounded px-2 py-1 hover:scale-105"
+                    aria-label={`View ${project.data.title} demo`}
+                  >
+                    <Play class="w-4 h-4" />
+                    <span class="text-sm font-medium">Demo</span>
+                  </a>
+                )}
+              </div>
+              
+              <div class="text-xs text-primary-500 dark:text-primary-500 capitalize">
+                {project.data.status.replace('-', ' ')}
+              </div>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+    
+    <!-- Call to Action -->
+    <div class="text-center mt-16">
+      <p class="text-lg text-primary-600 dark:text-primary-300 mb-6">
+        Want to see more of my work?
+      </p>
+      <a 
+        href="https://github.com/omid3699" 
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary inline-flex items-center space-x-2"
+      >
+        <Github class="w-5 h-5" />
+        <span>View All Projects on GitHub</span>
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,127 @@
+---
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-astro';
+import data from '../../../data.json';
+---
+
+<section id="home" class="min-h-screen flex items-center relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 bg-gradient-to-br from-white via-white to-primary-50 dark:from-primary-900 dark:via-primary-900 dark:to-black"></div>
+  <div class="absolute inset-0" style="background-image: url('/kyokushin.svg'), linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px), linear-gradient(0deg, rgba(158,0,255,0.03) 1px, transparent 1px); background-repeat: no-repeat, repeat, repeat; background-position: right -100px bottom -40px, center, center; background-size: 600px auto, 24px 24px, 24px 24px; animation: gridMove 12s linear infinite;"></div>
+  
+  <!-- Floating Elements -->
+  <div class="absolute top-20 left-10 w-20 h-20 bg-brand-200 dark:bg-brand-800 rounded-full opacity-60 animate-float"></div>
+  <div class="absolute top-40 right-20 w-16 h-16 bg-accent-200 dark:bg-accent-800 rounded-full opacity-40 animate-float" style="animation-delay: 2s;"></div>
+  <div class="absolute bottom-40 left-20 w-12 h-12 bg-brand-300 dark:bg-brand-700 rounded-full opacity-50 animate-float" style="animation-delay: 4s;"></div>
+  
+  <div class="container-width relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <!-- Content Column -->
+      <div class="space-y-8 text-center lg:text-left">
+        <div class="space-y-4 animate-fadeInUp">
+          <p class="text-brand-600 dark:text-brand-400 font-medium text-lg tracking-wide animate-stagger-1 animate-fadeInDown">
+            Hello, I'm
+          </p>
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold gradient-text leading-tight animate-stagger-2 animate-scaleIn mono">
+            {data.name}
+          </h1>
+          <div class="space-y-2 animate-stagger-3 animate-fadeInUp">
+            <p class="text-xl md:text-2xl text-primary-600 dark:text-primary-300 font-medium mono">
+              Developer & CTO
+            </p>
+            <p class="text-lg text-primary-500 dark:text-primary-400 mono">
+              {data.location ? `${data.location} • ` : ''}{data.email}
+            </p>
+          </div>
+        </div>
+        
+        <div class="space-y-6 animate-stagger-4 animate-fadeInUp">
+          <p class="text-lg md:text-xl text-primary-600 dark:text-primary-300 max-w-2xl leading-relaxed">
+            {data.summary}
+          </p>
+          
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="#projects" class="btn-primary glow-effect shadow-neon-cyan mono">
+              View My Work
+            </a>
+            <a href="#contact" class="btn-secondary shadow-neon-purple mono">
+              Get In Touch
+            </a>
+          </div>
+          
+          <!-- Social Links -->
+          <div class="flex items-center justify-center lg:justify-start space-x-4 pt-4">
+            <a
+              href="https://github.com/omid3699"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="p-3 rounded-full bg-white hover:bg-brand-100 dark:bg-primary-800/50 dark:hover:bg-brand-800/50 text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 transition-all duration-300 focus-ring backdrop-blur-sm border border-primary-200 dark:border-white/20 hover:border-brand-200 hover:scale-110 hover:shadow-glow"
+              aria-label="GitHub Profile"
+            >
+              <Github class="w-6 h-6" />
+            </a>
+            <a
+              href="https:///www.linkedin.com/in/omidazadi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="p-3 rounded-full bg-white hover:bg-brand-100 dark:bg-primary-800/50 dark:hover:bg-brand-800/50 text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 transition-all duration-300 focus-ring backdrop-blur-sm border border-primary-200 dark:border-white/20 hover:border-brand-200 hover:scale-110 hover:shadow-glow"
+              aria-label="LinkedIn Profile"
+            >
+              <Linkedin class="w-6 h-6" />
+            </a>
+            <a
+              href={`mailto:${data.email}`}
+              class="p-3 rounded-full bg-white hover:bg-brand-100 dark:bg-primary-800/50 dark:hover:bg-brand-800/50 text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 transition-all duration-300 focus-ring backdrop-blur-sm border border-primary-200 dark:border-white/20 hover:border-brand-200 hover:scale-110 hover:shadow-glow"
+              aria-label="Send Email"
+            >
+              <Mail class="w-6 h-6" />
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Image Column -->
+      <div class="flex justify-center lg:justify-end animate-stagger-5 animate-fadeInRight">
+        <div class="relative">
+          <!-- Profile Image -->
+          <div class="w-80 h-80 md:w-96 md:h-96 rounded-2xl bg-brand-gradient shadow-strong flex items-center justify-center relative overflow-hidden group">
+            {data.profile_image ? (
+              <img
+                src={data.profile_image}
+                alt={`${data.name} profile photo`}
+                class="w-full h-full rounded-2xl group-hover:scale-105 transition-transform duration-500"
+                loading="eager"
+                decoding="async"
+              />
+            ) : (
+              <div class="w-72 h-72 md:w-88 md:h-88 rounded-xl bg-white dark:bg-black/20 backdrop-blur-md flex items-center justify-center border border-primary-200 dark:border-white/30 group-hover:scale-105 transition-transform duration-500">
+                <span class="text-white text-lg font-medium">
+                  Professional Photo
+                </span>
+              </div>
+            )}
+            <!-- Shimmer effect -->
+            <div class="absolute inset-0 shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
+          
+          <!-- Decorative Elements -->
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent-200 dark:bg-accent-800 rounded-full opacity-60 animate-pulse-slow"></div>
+          <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-brand-300 dark:bg-brand-600 rounded-full opacity-40 animate-bounce-slow"></div>
+          <div class="absolute top-1/2 -left-8 w-8 h-8 bg-brand-400 dark:bg-brand-500 rounded-full opacity-50 animate-float" style="animation-delay: 1s;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fadeInUp" style="animation-delay: 1s; opacity: 0; animation-fill-mode: forwards;">
+      <a
+        href="#about"
+        class="flex flex-col items-center space-y-2 text-primary-500 hover:text-brand-600 dark:text-primary-400 dark:hover:text-brand-400 transition-all duration-300 focus-ring rounded-lg p-2 hover:scale-110"
+        aria-label="Scroll to About section"
+      >
+        <span class="text-sm font-medium">Scroll</span>
+        <ArrowDown class="w-5 h-5 animate-bounce" />
+      </a>
+    </div>
+  </div>
+</section>

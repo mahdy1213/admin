@@ -1,0 +1,63 @@
+---
+import { Code, Users, Rocket, Award } from 'lucide-astro';
+import data from '../../../data.json';
+---
+
+<section id="about" class="section-padding bg-white dark:bg-primary-900 section-surface karate-watermark">
+  <div class="container-width">
+    <div class="max-w-4xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <!-- Text Content -->
+        <div class="space-y-6">
+          <div class="prose prose-lg dark:prose-invert">
+            <p class="text-primary-700 dark:text-primary-200 leading-relaxed">
+              I'm a disciplined technologist and martial artist based in {data.location}. I build scalable systems with
+              Python, Go, and modern web technologies—focused on performance, security, and developer experience.
+            </p>
+          </div>
+          
+          <!-- Value Proposition -->
+          <div class="card-glass p-6 glow-effect">
+            <h3 class="font-semibold gradient-text mb-3">Principles <span class="belt belt-black ml-2">Black Belt Mindset</span></h3>
+            <p class="text-primary-700 dark:text-primary-300 italic leading-relaxed">
+              Build for clarity, measure what matters, automate what repeats, and keep shipping.
+            </p>
+
+          </div>
+        </div>
+        
+        <!-- Stats/Highlights -->
+        <div class="space-y-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="card p-6 text-center hover-lift hover-glow group">
+              <Code class="w-8 h-8 text-brand-600 dark:text-brand-400 mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+              <div class="text-2xl font-bold gradient-text">3+</div>
+              <div class="text-sm text-primary-600 dark:text-primary-400">Years Experience</div>
+            </div>
+            
+            <div class="card p-6 text-center hover-lift hover-glow group">
+              <Users class="w-8 h-8 text-brand-600 dark:text-brand-400 mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+              <div class="text-2xl font-bold gradient-text">25+</div>
+              <div class="text-sm text-primary-600 dark:text-primary-400">Projects Delivered</div>
+            </div>
+            
+            <div class="card p-6 text-center hover-lift hover-glow group">
+              <Rocket class="w-8 h-8 text-brand-600 dark:text-brand-400 mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+              <div class="text-2xl font-bold gradient-text">1</div>
+              <div class="text-sm text-primary-600 dark:text-primary-400">Startups Led</div>
+            </div>
+            
+            <div class="card p-6 text-center hover-lift hover-glow group">
+              <Award class="w-8 h-8 text-brand-600 dark:text-brand-400 mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+              <div class="text-2xl font-bold gradient-text">8+</div>
+              <div class="text-sm text-primary-600 dark:text-primary-400">Team Members</div>
+            </div>
+          </div>
+          
+</section>

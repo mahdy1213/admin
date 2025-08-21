@@ -1,0 +1,97 @@
+---
+import { Github, Linkedin, Mail } from 'lucide-astro';
+import data from '../../../data.json';
+---
+
+<footer class="bg-white dark:bg-black text-primary-800 dark:text-white relative overflow-hidden">
+  <div class="container-width py-12 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Brand Section -->
+      <div class="space-y-4">
+        <h3 class="text-xl font-semibold text-primary-900 dark:text-white">{data.name}</h3>
+        <p class="text-primary-600 dark:text-primary-300 text-sm leading-relaxed">
+          Full-stack and blockchain developer focused on building scalable solutions 
+          that create real-world impact. Currently serving as CTO at Karyab.org.
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-primary-900 dark:text-white">Quick Links</h4>
+        <nav class="flex flex-col space-y-2" aria-label="Footer navigation">
+          <a href="#about" class="text-primary-600 hover:text-accent-600 dark:text-primary-300 dark:hover:text-accent-400 text-sm transition-colors duration-200 focus-ring rounded px-1">
+            About
+          </a>
+          <a href="#experience" class="text-primary-600 hover:text-accent-600 dark:text-primary-300 dark:hover:text-accent-400 text-sm transition-colors duration-200 focus-ring rounded px-1">
+            Experience
+          </a>
+          <a href="#projects" class="text-primary-600 hover:text-accent-600 dark:text-primary-300 dark:hover:text-accent-400 text-sm transition-colors duration-200 focus-ring rounded px-1">
+            Projects
+          </a>
+          <a href="#skills" class="text-primary-600 hover:text-accent-600 dark:text-primary-300 dark:hover:text-accent-400 text-sm transition-colors duration-200 focus-ring rounded px-1">
+            Skills
+          </a>
+          <a href="#education" class="text-primary-600 hover:text-accent-600 dark:text-primary-300 dark:hover:text-accent-400 text-sm transition-colors duration-200 focus-ring rounded px-1">
+            Education
+          </a>
+          <a href="#contact" class="text-primary-600 hover:text-accent-600 dark:text-primary-300 dark:hover:text-accent-400 text-sm transition-colors duration-200 focus-ring rounded px-1">
+            Contact
+          </a>
+        </nav>
+      </div>
+      
+      <!-- Contact & Social -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-primary-900 dark:text-white">Connect</h4>
+        <div class="flex space-x-4">
+          <a
+            href="https://github.com/omid3699"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="p-2 rounded-lg bg-primary-800 hover:bg-accent-600 text-primary-300 hover:text-white transition-all duration-200 focus-ring"
+            aria-label="GitHub Profile"
+          >
+            <Github class="w-5 h-5" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/omidazadi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="p-2 rounded-lg bg-primary-800 hover:bg-accent-600 text-primary-300 hover:text-white transition-all duration-200 focus-ring"
+            aria-label="LinkedIn Profile"
+          >
+            <Linkedin class="w-5 h-5" />
+          </a>
+          <a
+            href={`mailto:${data.email}`}
+            class="p-2 rounded-lg bg-primary-800 hover:bg-accent-600 text-primary-300 hover:text-white transition-all duration-200 focus-ring"
+            aria-label="Send Email"
+          >
+            <Mail class="w-5 h-5" />
+          </a>
+        </div>
+        <p class="text-primary-400 text-sm">
+          <a 
+            href={`mailto:${data.email}`}
+            class="hover:text-accent-400 transition-colors duration-200 focus-ring rounded px-1"
+            >
+            {data.email}
+          </a>
+        </p>
+      </div>
+    </div>
+    
+    <hr class="border-primary-700 dark:border-primary-800 my-8" />
+    
+    <!-- Copyright -->
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <p class="text-primary-400 text-sm">
+        © {new Date().getFullYear()} {data.name}. All rights reserved.
+      </p>
+      <p class="text-primary-400 text-sm">
+        Built with <span class="text-accent-400">Astro</span> & <span class="text-accent-400">Tailwind CSS</span>
+      </p>
+    </div>
+  </div>
+  <div class="absolute inset-0 opacity-40" style="background-image: radial-gradient(circle at 20% 30%, rgba(0,229,255,0.1), transparent 40%), radial-gradient(circle at 80% 70%, rgba(158,0,255,0.1), transparent 40%);"></div>
+</footer>

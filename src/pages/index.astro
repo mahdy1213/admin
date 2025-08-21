@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import Home from '../components/sections/Home.astro';
+import About from '../components/sections/About.astro';
+import Experience from '../components/sections/Experience.astro';
+import Projects from '../components/sections/Projects.astro';
+import Skills from '../components/sections/Skills.astro';
+import Education from '../components/sections/Education.astro';
+import ResumeDownload from '../components/sections/ResumeDownload.astro';
+import Contact from '../components/sections/Contact.astro';
+import data from '../../data.json';
+
+const pageTitle = `${data.name} — Developer & CTO`;
+const pageDescription = data.summary;
+---
+
+<Layout 
+  title={pageTitle}
+  description={pageDescription}
+>
+  <Header />
+  
+  <main id="main" class="pt-16">
+    <Home />
+    <About />
+    <Experience />
+    <Projects />
+    <Skills />
+    <Education />
+    <ResumeDownload />
+    <Contact />
+  </main>
+  
+  <Footer />
+</Layout>

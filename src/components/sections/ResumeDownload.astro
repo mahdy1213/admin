@@ -1,0 +1,24 @@
+---
+import { FileDown } from 'lucide-astro';
+import data from '../../../data.json';
+---
+
+<section class="section-padding bg-primary-50 dark:bg-primary-800">
+  <div class="container-width">
+    <div class="card p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-2xl font-semibold">Download Resume</h3>
+        <p class="text-primary-600 dark:text-primary-300">Get a PDF copy of my latest resume with full experience and skills.</p>
+      </div>
+      <div>
+        {data.resume_url ? (
+          <a href={data.resume_url} target="_blank" rel="noopener" class="btn-primary inline-flex items-center gap-2">
+            <FileDown class="w-5 h-5" /> Download PDF
+          </a>
+        ) : (
+          <p class="text-primary-500 dark:text-primary-400 text-sm">Resume link not provided.</p>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
