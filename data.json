@@ -1,204 +1,209 @@
- {
-    "name": "managerX",
-    "location": "unknown",
-    "email": "managerx0513@gmail.com",
-    "phone": "managerx0513@gmail.com",
-    "profile_image": "./profile.png",
-    "resume_url": "https://biaupload.com/do.php?filename=org-390e41f7d2b91.pdf",
-    "summary": "How are you? I am a dark web developer specializing in network security, Python, Java, JavaScript, Kotlin, HTML, CSS, AI, Kali Linux. Over the years, I have learned and chosen the hard way for those young people who are unfortunately doing things that are not right for them. I provide a good environment for everyone.",
-    "experience": [{
-            "title": "Android rating",
-            "company": "............",
-            "location": null,
-            "start_date": "2020-08",
-            "end_date": "Present",
-            "achievements": [
-                "Ability to hide the app in the app list.",
-                "Obtaining all permissions for full access to the phone automatically after installing the app.",
-                "All access such as camera, SMS, Android hot pages and all other apps as well as calls.",
-                "Simple, easy and practical access with any browser. With defined APIs, you can easily control the victim's phone.",
-                "The IP address of the owner or any recipient of information remains hidden from the victim's view."
-            ]
-        },
-        {
-            "title": "Artificial intelligence with application integration",
-            "company": "............",
-            "location": null,
-            "start_date": "2023-09",
-            "end_date": "Present",
-            "achievements": [
-                "The international plan is now in our hands.",
-                "Solving complex algorithms Implementing the most complex international algorithm for converting voice into control commands.",
-                "Easy and simple user panel, free to use for everyone.",
-                "An international project has been launched for blind, visually impaired, elderly, and working people, and now we have created it with our own hands.",
-                "One of the most practical global and international algorithms."
-            ]
-        },
-        {
-            "title": "Conversational AI model",
-            "company": "............",
-            "location": null,
-            "start_date": "2024-11",
-            "end_date": "2025-06",
-            "achievements": [
-                "Talking to a new and updated model providing all questions with documented answers.",
-                "Ability to speak different accents correctly and meaningfully.",
-                "Automatic and intelligent learning capability for instant and convenient conversation using audience evaluation.",
-                "Download all information from sources Read all information Text processing and speech conversion.",
-                "Beautiful and easy-to-use functional design for Android and Windows versions"
-            ]
-        },
-        {
-            "title": "Designing the largest Telegram bot ComBot",
-            "company": "............",
-            "location": null,
-            "start_date": "2024-01",
-            "end_date": "2024-09",
-            "achievements": [
-                "ComBot is trusted by millions of users worldwide for its reliable group management features.",
-                "It offers advanced spam filtering, keeping groups clean and safe from unwanted content.",
-                "ComBot provides detailed analytics and user activity tracking to help admins monitor group health.",
-                "The bot allows customized rules and automated moderation tailored to each group’s needs.",
-                "It supports multi-language commands, making it accessible to users across different countries.",
-                "ComBot's intuitive interface and responsive support have earned it high praise from administrators everywhere."
-            ]
-        }
-    "education": [{
-        "institution": "School",
-        "location": "unknown",
-        "degree": "School",
-        "year": "0000"
-    }],
-    "additional_education": "Advanced knowledge in the field of security and network software, websites, artificial intelligence, and Android applications based on personal development and new global creativity.",
-    "volunteer_experience": [{
-            "organization": "Education",
-            "location": "unknown",
-            "role": "Volunteer",
-            "responsibilities": [
-                "Dark engineering team, interference in internal and external websites, collecting information from data managers and databases, collecting all website information."
-            ]
-        },
-        {
-            "organization": "Education",
-            "location": null,
-            "role": "Active Volunteer",
-            "responsibilities": [
-                "Domestic and foreign companies in the fields of website security, application security and artificial intelligence, penetration testing, intrusion detection, and blocking intrusion paths."
-            ]
-        }
-    ],
-    "skills": {
-        "programming_languages": [
-            "Python",
-            "Java",
-            "Javascript",
-            "Kotlin",
-            "Perl",
-            "SQL",
-            "LISP",
-            "PHP"
-        ],
-        "frameworks": [
-            "Django",
-            "Flask",
-            "FastAPI",
-            "Scrapy",
-            "Selenium",
-            "Spring Boot",
-            "Playwright",
-            "React",
-            "Angular",
-            "Hunchentoot",
-            "Laravel",
-            "Express",
-            "Vue.js",
-            "Node.js"
-        ],
-        "devops_cloud": [
-            "Docker",
-            "Podman",
-            "AWS",
-            "GitHub Actions",
-            "Nginx",
-            "CI/CD",
-            "Kubernetes",
-            "Terraform",
-            "Jenkins"
-        ],
-        "blockchain": [
-            "Ethereum",
-            "Smart Contracts",
-            "IPFS",
-            "Foundry",
-            "Hardhat",
-            "Truffle",
-            "Remix",
-            "Web3.js",
-            "Web3.py",
-            "Solidity"
-        ],
-        "databases": [
-            "PostgreSQL",
-            "MariaDB",
-            "Redis",
-            "MongoDB",
-            "MySQL",
-            "SQLite"
-        ],
-        "tools": [
-            "Git",
-            "Linux",
-            "Celery",
-            "Postman",
-            "RabbitMQ",
-            "Swagger",
-            "VSCode",
-            "PyCharm",
-            "IntelliJ IDEA"
-        ],
-        "backend": [
-            "REST APIs",
-            "GraphQL",
-            "gRPC",
-            "Microservices",
-            "WebSockets",
-            "API Gateway",
-            "JWT",
-            "OAuth2",
-            "MVC Architecture",
-            "ORM Frameworks"
-        ],
-        "practices": [
-            "TDD",
-            "BDD",
-            "Design Patterns",
-            "Code Review",
-            "Performance Optimization",
-            "Security Best Practices",
-            "Agile Methodologies",
-            "Scrum",
-            "Kanban",
-            "Continuous Integration/Deployment"
-        ],
-        "technical": [
-            "Automation & Workflow Integration",
-            "System Design for Business Operations",
-            "Role-Based Access Control (RBAC)",
-            "Linux Server Management/AdminStrations",
-            "Cloud Architecture Design",
-            "API Security",
-            "Scalable Application Development"
-        ],
-        "soft_skills": [
-            "Professional English (Reading, Writing, Speaking)",
-            "Cross-Cultural Communication",
-            "Team Coordination & Remote Collaboration",
-            "Community Outreach & Event Coordination",
-            "Mentorship & Emotional Support",
-            "Problem-Solving & Critical Thinking",
-            "Self-Motivated Learner",
-            "Adaptability in High-Pressure Environments",
-            "Effective Time Management"
-        ]
+{
+  "name": "managerX",
+  "location": "unknown",
+  "email": "managerx0513@gmail.com",
+  "phone": "managerx0513@gmail.com",
+  "profile_image": "./profile.png",
+  "resume_url": "https://biaupload.com/do.php?filename=org-390e41f7d2b91.pdf",
+  "summary": "How are you? I am a dark web developer specializing in network security, Python, Java, JavaScript, Kotlin, HTML, CSS, AI, Kali Linux. Over the years, I have learned and chosen the hard way for those young people who are unfortunately doing things that are not right for them. I provide a good environment for everyone.",
+  "experience": [
+    {
+      "title": "Android rating",
+      "company": "............",
+      "location": null,
+      "start_date": "2020-08",
+      "end_date": "Present",
+      "achievements": [
+        "Ability to hide the app in the app list.",
+        "Obtaining all permissions for full access to the phone automatically after installing the app.",
+        "All access such as camera, SMS, Android hot pages and all other apps as well as calls.",
+        "Simple, easy and practical access with any browser. With defined APIs, you can easily control the victim's phone.",
+        "The IP address of the owner or any recipient of information remains hidden from the victim's view."
+      ]
+    },
+    {
+      "title": "Artificial intelligence with application integration",
+      "company": "............",
+      "location": null,
+      "start_date": "2023-09",
+      "end_date": "Present",
+      "achievements": [
+        "The international plan is now in our hands.",
+        "Solving complex algorithms Implementing the most complex international algorithm for converting voice into control commands.",
+        "Easy and simple user panel, free to use for everyone.",
+        "An international project has been launched for blind, visually impaired, elderly, and working people, and now we have created it with our own hands.",
+        "One of the most practical global and international algorithms."
+      ]
+    },
+    {
+      "title": "Conversational AI model",
+      "company": "............",
+      "location": null,
+      "start_date": "2024-11",
+      "end_date": "2025-06",
+      "achievements": [
+        "Talking to a new and updated model providing all questions with documented answers.",
+        "Ability to speak different accents correctly and meaningfully.",
+        "Automatic and intelligent learning capability for instant and convenient conversation using audience evaluation.",
+        "Download all information from sources Read all information Text processing and speech conversion.",
+        "Beautiful and easy-to-use functional design for Android and Windows versions"
+      ]
+    },
+    {
+      "title": "Designing the largest Telegram bot ComBot",
+      "company": "............",
+      "location": null,
+      "start_date": "2024-01",
+      "end_date": "2024-09",
+      "achievements": [
+        "ComBot is trusted by millions of users worldwide for its reliable group management features.",
+        "It offers advanced spam filtering, keeping groups clean and safe from unwanted content.",
+        "ComBot provides detailed analytics and user activity tracking to help admins monitor group health.",
+        "The bot allows customized rules and automated moderation tailored to each group’s needs.",
+        "It supports multi-language commands, making it accessible to users across different countries.",
+        "ComBot's intuitive interface and responsive support have earned it high praise from administrators everywhere."
+      ]
     }
+  ],
+  "education": [
+    {
+      "institution": "School",
+      "location": "unknown",
+      "degree": "School",
+      "year": "0000"
+    }
+  ],
+  "additional_education": "Advanced knowledge in the field of security and network software, websites, artificial intelligence, and Android applications based on personal development and new global creativity.",
+  "volunteer_experience": [
+    {
+      "organization": "Education",
+      "location": "unknown",
+      "role": "Volunteer",
+      "responsibilities": [
+        "Dark engineering team, interference in internal and external websites, collecting information from data managers and databases, collecting all website information."
+      ]
+    },
+    {
+      "organization": "Education",
+      "location": null,
+      "role": "Active Volunteer",
+      "responsibilities": [
+        "Domestic and foreign companies in the fields of website security, application security and artificial intelligence, penetration testing, intrusion detection, and blocking intrusion paths."
+      ]
+    }
+  ],
+  "skills": {
+    "programming_languages": [
+      "Python",
+      "Java",
+      "Javascript",
+      "Kotlin",
+      "Perl",
+      "SQL",
+      "LISP",
+      "PHP"
+    ],
+    "frameworks": [
+      "Django",
+      "Flask",
+      "FastAPI",
+      "Scrapy",
+      "Selenium",
+      "Spring Boot",
+      "Playwright",
+      "React",
+      "Angular",
+      "Hunchentoot",
+      "Laravel",
+      "Express",
+      "Vue.js",
+      "Node.js"
+    ],
+    "devops_cloud": [
+      "Docker",
+      "Podman",
+      "AWS",
+      "GitHub Actions",
+      "Nginx",
+      "CI/CD",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins"
+    ],
+    "blockchain": [
+      "Ethereum",
+      "Smart Contracts",
+      "IPFS",
+      "Foundry",
+      "Hardhat",
+      "Truffle",
+      "Remix",
+      "Web3.js",
+      "Web3.py",
+      "Solidity"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MariaDB",
+      "Redis",
+      "MongoDB",
+      "MySQL",
+      "SQLite"
+    ],
+    "tools": [
+      "Git",
+      "Linux",
+      "Celery",
+      "Postman",
+      "RabbitMQ",
+      "Swagger",
+      "VSCode",
+      "PyCharm",
+      "IntelliJ IDEA"
+    ],
+    "backend": [
+      "REST APIs",
+      "GraphQL",
+      "gRPC",
+      "Microservices",
+      "WebSockets",
+      "API Gateway",
+      "JWT",
+      "OAuth2",
+      "MVC Architecture",
+      "ORM Frameworks"
+    ],
+    "practices": [
+      "TDD",
+      "BDD",
+      "Design Patterns",
+      "Code Review",
+      "Performance Optimization",
+      "Security Best Practices",
+      "Agile Methodologies",
+      "Scrum",
+      "Kanban",
+      "Continuous Integration/Deployment"
+    ],
+    "technical": [
+      "Automation & Workflow Integration",
+      "System Design for Business Operations",
+      "Role-Based Access Control (RBAC)",
+      "Linux Server Management/AdminStrations",
+      "Cloud Architecture Design",
+      "API Security",
+      "Scalable Application Development"
+    ],
+    "soft_skills": [
+      "Professional English (Reading, Writing, Speaking)",
+      "Cross-Cultural Communication",
+      "Team Coordination & Remote Collaboration",
+      "Community Outreach & Event Coordination",
+      "Mentorship & Emotional Support",
+      "Problem-Solving & Critical Thinking",
+      "Self-Motivated Learner",
+      "Adaptability in High-Pressure Environments",
+      "Effective Time Management"
+    ]
+  }
 }
