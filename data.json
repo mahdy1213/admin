@@ -62,10 +62,10 @@
                 "It supports multi-language commands, making it accessible to users across different countries.",
                 "ComBot's intuitive interface and responsive support have earned it high praise from administrators everywhere."
             ]
-        },
+        }
     "education": [{
         "institution": "School",
-  
+        "location": "unknown",
         "degree": "School",
         "year": "0000"
     }],
@@ -92,7 +92,7 @@
             "Python",
             "Java",
             "Javascript",
-            "Kathleen",
+            "Kotlin",
             "Perl",
             "SQL",
             "LISP",
