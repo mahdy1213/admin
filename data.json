@@ -101,23 +101,25 @@
       "Perl",
       "SQL",
       "LISP",
-      "PHP"
+      "PHP",
+      "Html",
+      "css",
+      "felater"
     ],
     "frameworks": [
       "Django",
       "Flask",
       "FastAPI",
       "Scrapy",
-      "Selenium",
       "Spring Boot",
       "Playwright",
       "React",
-      "Angular",
       "Hunchentoot",
-      "Laravel",
       "Express",
       "Vue.js",
-      "Node.js"
+      "NumPy",
+      "Pandas",
+      "Python telegram bot"
     ],
     "devops_cloud": [
       "Docker",
